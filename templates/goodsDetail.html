@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>商品详情页</title>
+	<link rel="stylesheet" type="text/css" href="{$themes_static_host_url}/{$themes_static_dist_url}/css/app/webview/sku_intro_6.3.0.css">
+</head>
+<body>
+
+	<div class="bd-content clearfix">
+		<ul class="bd-products content-info" >
+            {if !empty($data.brand_location)}
+              <li>
+                <span>品牌所在地：</span>
+                <p>{$data.brand_location}</p>
+              </li>
+            {/if}
+
+            {if !empty($data.goods_brief)}
+            <li>
+                <span>产品描述：</span>
+                <div>{$data.goods_brief}</div>
+            </li>
+            {/if}
+
+ 		</ul>
+	</div>
+
+
+    <!--不支持7天退货的理由-->
+    {if  $data.is_return_product == 0  &&  !empty($data.return_product_reason) }
+    <div class="bd-content content-spms clearfix">
+        <img src="http://fed.pimg.cn/images/webview/attention.jpg" width="100%"/>
+        <p>{$data.return_product_reason}</p>
+    </div>
+    {/if}
+
+    {if !empty($data.announcement)}
+    <!--店铺公告-->
+    <div class="bd-content content-dpgg clearfix">
+        <img src="http://fed.pimg.cn/images/webview/notice.png" width="100%"/>
+        <p>
+            {$data.announcement}
+        </p>
+    </div>
+    {/if}
+    <div class="bd-content clearfix">
+        {foreach from=$data.pictures item=pictures key=key}
+        <img src="{$pictures.img_url}" width="100%" />
+        {/foreach}
+
+    </div>
+    <script type="text/javascript" src="http://js.tongji.linezing.com/3079650/tongji.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-39767713-1', 'hichao.com');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+    "zepto":"./js/lib/zepto/zepto.min",
+    "h5_base": "./js/lib/base/base",
+    "base64": "./js/lib/utils/base64/base64",
+    "smsbutton":"./js/lib/utils/sms_button/sms_button",
+    "md5": "./js/lib/utils/md5/md5",
+    "cookie": "./js/lib/utils/cookie/cookie",
+    "tongji": "./js/lib/utils/tongji/tongji",
+    "version": "./js/lib/utils/version/version",
+    "jweixin": "./js/lib/utils/weixin/jweixin.js",
+    "common": "./js/lib/common/common.js"
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>品牌介绍</title>
+	<link rel="stylesheet" type="text/css" href="{$themes_static_host_url}/{$themes_static_dist_url}/css/app/webview/sku_intro_6.3.0.css">
+</head>
+<body>  
+     <div class="bd-content contene-brand clearfix">
+       {if $center eq '1'}
+          <!--默认图 麻烦在这里 加一样样式 -->
+            <img src="{$banner_url}" />
+             <p>{$brand_desc}</p>
+         {else}
+           <img src="{$banner_url}" width="100%;"/>
+           <p>{$brand_desc}</p>
+       {/if}
+      <!--
+         <img src="http://{$themes_static_host_url}/images/wap/h5_web/sku_intro_brand.png" width="100%"/>
+        <p>{$brand_desc}</p>
+         <img src="http://{$themes_static_host_url}/images/wap/h5_web/sku_intro_line.png" width="100%"/>
+         <p>{$brand_desc}</p>
+         -->
+      </div>
+     <script type="text/javascript" src="http://js.tongji.linezing.com/3079650/tongji.js"></script>
+     <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+         ga('create', 'UA-39767713-1', 'hichao.com');
+         ga('send', 'pageview');
+     </script>
+ </body>
+</html>

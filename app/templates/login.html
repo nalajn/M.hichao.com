@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="/app/dist/css/app/login.css">
+</head>
+<body>
+    <div id="login">
+        <div class="header">
+            <a  onclick="window.history.back()"><img src="/app/images/login/back_button_black@2x.png"></a>用户登录
+        </div>
+        <p class="txt_area">亲，请先登录才能继续购物哦~</p>
+
+        <p class="write_com input_box">
+            <input type="text" placeholder="手机号码"  class="J-user-name" maxlength="11">
+            <span class="delete hide"></span>
+        </p>
+        <p class="write_com input_box">
+            <input type="password" placeholder="密码" class="J-password">
+            <span class="delete hide"></span>
+        </p>
+
+        <p class="write_com"><a class="login">登录</a></p>
+
+        <P class="p_link"><a  class="register">新用户注册</a><a  class="forget">忘记密码？</a></P>
+
+        <div class="quick_login">
+            <p class="hr_stat">
+                <span class="line"></span>
+                <span class="con">第三方账号快速登录</span>
+                <span class="line"></span>
+            </p>
+            <p class="fast_login">
+                <a id="qq_btn" data-value="qq"><img src="/app/images/login/qq_kj.png"/></a>
+                <a id="wechat_btn" data-value="weixin"><img src="/app/images/login/weixin_kj.png"/></a>
+                <a data-value="weibo"><img src="/app/images/login/weibo_kj.png"/></a>
+                <a class="taobao" data-value="taobao"><img src="/app/images/login/taobao_kj.png"/></a>
+            </p>
+        </div>
+        <div class="dialog hide">
+            <div class="bac-mask"></div>
+            <p class="msg"></p>
+        </div>
+    </div>
+    <script src="/app/dist/js/app/login.js"></script>
+</body>
+</html>

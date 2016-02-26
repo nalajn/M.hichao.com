@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="telephone=no" name="format-detection">
+    <title>新用户注册</title>
+    <link rel="stylesheet" type="text/css" href="/app/dist/css/app/register.css">
+</head>
+<body>
+<div id="register">
+    <div class="header">
+        <a onclick="window.history.back()"><img src="/app/images/login/back_button_black@2x.png"></a>新用户注册
+    </div>
+    <div class="input_span">
+        <div class="txt-container box">
+            <input type="text"   placeholder="请输入手机号" maxlength="11" class="J-username" >
+            <span class="delete hide"></span>
+        </div>
+        <div class="txt-container" style="overflow: hidden;">
+            <div class="box captcha-box">
+                <input type="text" placeholder="请输入验证码" class="yz J-captcha">
+                <span class="delete hide"></span>
+            </div>
+            <a class="J-captcha-btn">获取验证码</a>
+        </div>
+        <div class="txt-container box">
+            <input type="password" placeholder="请输入密码" class="J-password">
+            <span class="delete hide"></span>
+        </div>
+        <p class="message_state"></p>
+        <p class="for_loginBtn j-for_regBtn"><a>注册</a> </p>
+        <div class="dialog hide">
+            <div class="bac-mask"></div>
+            <p class="msg"></p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="/app/dist/js/app/register.js"></script>
+</html>

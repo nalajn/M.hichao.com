@@ -1,0 +1,54 @@
+{
+    "name": "fed-build",
+    "version": "1.0.0",
+    "description": "dev or build js & css ",
+    "main": "lib/index",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wodfan/static.git"
+    },
+    "homepage": "https://github.com/wodfan/static",
+    "bugs": {
+        "url": "https://github.com/wodfan/static.git"
+    },
+    "scripts": {
+        "dist": "set NODE_ENV=dist&&grunt",
+        "dev": "set NODE_ENV=dev&&grunt",
+        "watch": "set NODE_ENV=dev&&grunt",
+        "build": "set NODE_ENV=build&&grunt"
+    },
+    "tags": [
+        "hichao",
+        "static",
+        "fed",
+        "resource",
+        "rs"
+    ],
+    "dependencies": {
+        "grunt": "0.4.5",
+        "grunt-webpack": "^1.0.11",
+        "grunt-rev": "^0.1.0",
+        "grunt-filerev": "^2.3.1",
+        "babel-core": "^5.8.25",
+        "babel-loader": "^5.3.2",
+        "jshint-loader": "^0.8.3",
+        "webpack-dev-server": "^1.12.1",
+        "autoprefixer-loader": "^3.1.0",
+        "extract-text-webpack-plugin": "^0.8.2",
+        "grunt-contrib-less": "^1.0.0",
+        "less-plugin-clean-css": "^1.5.1",
+        "less-plugin-autoprefix": "^1.5.1",
+        "jquery": "^1.11.0",
+        "zepto": "^0.0.4",
+        "grunt-file-hash": "^0.1.5",
+        "grunt-contrib-watch": "^0.4.0"
+    },
+    "keywords": [
+        "hichao",
+        "static",
+        "web",
+        "rs"
+    ],
+    "author": "",
+    "license": "ISC"
+}

@@ -1,0 +1,486 @@
+@charset 'utf-8';
+@import "../lib/common";
+
+@gray: #e1e1e1;
+@tit-gray: #3c3c3c;
+@font-gray: #6a6c72;
+@bac: #f7f7f7;
+@pink: #ff4c91;
+#cart{
+	padding-bottom: 2.5rem;
+	.header{
+		position: relative;
+		padding: 0.75rem;
+	    background: #fff;
+	    text-align: center;
+	    font-size: 1rem;
+	    color: @tit-gray;
+	    .return{
+	    	position: absolute;
+	    	top: 0.85rem;
+	    	left: 0.5rem;
+	    	width: 1rem;
+	    	height: 1rem;
+	    	background: url('/app/images/back_button_black@2x.png') no-repeat center center;
+	    	background-size: 100%;
+	    }
+	    .goods-num{
+	    	position: absolute;
+		    top: .8rem;
+		    right: .5rem;
+		    width: .6rem;
+		    height: .6rem;
+		    padding: .1rem;
+		    line-height: .6rem;
+		    -webkit-border-radius: 50%;
+		    -moz-border-radius: 50%;
+		    border-radius: 50%;
+		    background: #f43a36;
+		    text-align: center;
+		    font-size: .5rem;
+		    color: #fff;
+		    &:before{
+		    	content: '';
+		        background: url('/app/images/cart.png') no-repeat;
+		        background-size: 60%;
+		        position: absolute;
+		        top: 1.4rem;
+		        right: 0.8rem;
+		        width: 0.75rem;
+		        height: 0.75rem;
+		    }
+	    }
+	}
+	.shop{
+		padding-top: 0.5rem;
+		background-color: @bac;
+		.select{
+			float: left;
+		    width: 1.1rem;
+		    margin-right: 0.7rem;
+		}
+		.name{
+			overflow: hidden;
+		    line-height: 1.1rem;
+		    padding: 0.55rem 0.75rem;
+			background-color: #fff;
+			.tit{
+				float: left;
+				width: 70%;
+				position: relative;
+				font-size: 0.7rem;
+				color: @tit-gray;
+				overflow: hidden;
+			    white-space: nowrap;
+			    text-overflow: ellipsis;
+				a{
+					color: @tit-gray;
+				}
+				.logistics{
+					width: 13%;
+    				margin-right: 0.5rem;
+				}
+			}
+			.editbtn{
+				float: right;
+		    	font-size: 0.6rem;
+		    	font-weight: bold;
+		    	color: #888;
+			}
+		}
+		.item{
+			padding-left: 0.75rem;
+			border-top: 1px solid #e1e1e1;
+			background: #fff;
+			.select{
+				margin: 2.3rem 0.7rem 0 0;
+			}
+			dl{
+				overflow: hidden;
+				dt{
+					float: left;
+    				margin: 1rem 0.4rem 1rem 0;
+    				position: relative;
+    				width: 3.3rem;
+    				height: 3.3rem;
+    				overflow: hidden;
+					img{
+						width: 3.3rem;
+					}
+					.sold_out{
+						position: absolute;
+					    bottom: 0;
+					    left: 0;
+					    width: 100%;
+					    line-height: 0.9rem;
+					    background: #000;
+					    opacity: 0.65;
+					    font-size: 0.6rem;
+					    text-align: center;
+					    color: #fff;
+					}
+				}
+				dd{
+					float: left;
+					font-size: 0.55rem;
+				}
+				.edit{
+					p{
+						overflow: hidden;
+						line-height: 2rem;
+						&:first-child{
+							line-height: 1rem;
+							border-bottom: 1px solid #e1e1e1;
+							text-align: center;
+							color: @font-gray;
+							span{
+								float: left;
+								margin: 0.5rem 0;
+								border-right: 1px solid #e1e1e1;
+								&:last-child{
+									border: 0;
+								}
+							}
+							.subtract,.add{
+								width: 2.02rem;
+								height: 1rem;
+					          	font-weight: bold;
+					          	font-size: 0.6rem;
+					        }
+							.subtract{
+					          background: url('/app/images/mxyc_app_yushou_shopping_btn_jian_normal@2x.png') no-repeat center center;
+					          background-size: 45%;
+					        }
+					        .add{
+					          background: url('/app/images/mxyc_app_yushou_shopping_btn_jia_normal@2x.png') no-repeat center center;
+					          background-size: 40%;
+					        }
+					        .subtract.gray{
+					          background: url('/app/images/mxyc_app_yushou_shopping_btn_jian_disabled@2x.png') no-repeat center center;
+					          background-size: 45%;
+					        }
+					        .add.gray{
+					          background: url('/app/images/mxyc_app_yushou_shopping_btn_jia_disabled@2x.png') no-repeat center center;
+					          background-size: 40%;
+					        }
+					        .goodsnum{
+					          	width: 2.95rem;
+					          	font-size: 0.7rem;
+					          	color: @tit-gray;
+					        }
+						}
+						&:nth-child(2){
+							color: #b0b0b0;
+							span:first-child{
+								margin-right: 0.6rem;
+							}
+						}
+					}
+				}
+				.num{
+					width: 56.6%;
+    				margin-top: 0.5rem;
+				}
+				.removebtn{
+					float: right;
+					width: 15%;
+				    padding: 0.6rem 0;
+				    line-height: 4.3rem;
+				    background: #ff3b30;
+				    color: #fff;
+				    font-size: 0.7rem;
+				    font-weight: bold;
+				    text-align: center;
+				}
+				.finish{   
+					margin: 0.5rem 0;
+					line-height: 1rem;
+				}
+				.info{
+					float: left;
+					width: 56%;
+					a{
+						overflow : hidden;
+			            text-overflow: ellipsis;
+			            display: -webkit-box;
+			            -webkit-line-clamp: 2;
+			            -webkit-box-orient: vertical;
+						color: @font-gray;
+					}
+					p:first-child{
+						overflow: hidden;
+						border: 0;
+						width: 100%;
+						text-align: left;
+						font-size: 0.6rem;
+						color: @font-gray;
+					}
+					.attr{
+						color: #b0b0b0;
+						font-size: 0.55rem;
+					}
+					.price{
+						color: @pink;
+						font-size: 0.7rem;
+					}
+				}
+				.finish.goodsnum{
+					float: right;
+					width: 5%;
+					margin-right: 0.75rem;
+					color: #b0b0b0;
+					font-size: 0.55rem;
+				}
+				.hide{
+					display: none;
+				}
+			}
+		}
+		.privilege {
+		    font-size: 0.6rem;
+		    border-top: 1px solid #e1e1e1;
+		    background: #fff;
+		    li {
+		      overflow: hidden;
+		      line-height: 2.2rem;
+		      margin: 0 0.75rem 0 2.5rem;
+		      border-top: 1px solid #e1e1e1;
+		      &:first-child {
+		        border: 0;
+		      }
+		      .tit,.promotes{
+		        float: left;
+		      }
+		      .tit{
+		        position: relative;    
+		        height: 1.2rem;
+    			line-height: 1.2rem;
+    			width: 15%;
+    			margin-top: 0.65rem;
+		        border-top: 1px solid #ff4c91;
+		        border-bottom: 1px solid #ff4c91;
+		        color: @pink;
+    			text-align: center;
+		        &:before{
+		          content: '';
+		          background: url('/app/images/bg_buy_coupon_left@2x.png') no-repeat;
+		          background-size: contain;
+		          position: absolute;
+		          top: -0.02rem;
+		          left: 0;
+		          width: .75rem;
+		          height: 1.24rem;
+		        }
+		        &:after{
+		          content: '';
+		          background: url('/app/images/bg_buy_coupon_right@2x.png') no-repeat;
+		          background-size: contain;
+		          position: absolute;
+		          top: -0.02rem;
+		          right: -0.5rem;
+		          width: .75rem;
+		          height: 1.24rem;
+		        }
+		      }
+		      .tag{
+		        float: left;
+		        line-height: 1.2rem;
+		        margin: 0.65rem 0 0.65rem 0.5rem;
+		        color: @font-gray;
+		      }
+		    }
+		    .promote_reach{
+		      .tag{
+		        padding: 0;
+		      }
+		    }
+		    .promote_coupon{
+		    	position: relative;
+		    	&:before{
+			      	content: '';
+			      	background: url('/app/images/arrow_right.png') no-repeat;
+			      	background-size: 80%;
+			      	position: absolute;
+			      	top: 0.9rem;
+			      	right: 0;
+			      	width: .5rem;
+			      	height: 0.7rem;
+			    }
+		    	.coupon_tit{
+		    		float: left;
+				    padding-left: 0.5rem;
+				    line-height: 2.5rem;
+				    color: @font-gray;
+		    	}
+		    }
+		}
+		.hide{
+			display: none;
+		}
+	}
+	.total{
+	    position: fixed;
+	    left: 0;
+	    bottom: 0;
+	    z-index: 999;
+	    width: 96%;
+		overflow: hidden;
+	    height: 2.5rem;
+	    padding-left: 0.75rem;
+	    border-top: 1px solid #e1e1e1;
+	    background: #fff;
+    	font-size: 0.55rem;
+		color: #888;
+		.select-all{
+			float: left;
+			margin: 0.4rem 0.7rem 0 0;
+    		width: 1.2rem;
+    		text-align: left;
+    		img{
+    			width: 1.1rem;
+    			margin-bottom: 0.15rem;
+    		}
+		}
+		.con{
+			overflow: hidden;
+			float: left;
+			width: 40%;
+			margin-top: 0.4rem;
+			line-height: 0.9rem;
+		}
+		.btn{
+			float: right;
+			width: 4.25rem;
+			line-height: 2.5rem;
+			background: @pink;
+			color: #fff;
+			font-weight: bold;
+			font-size: 0.7rem;
+			text-align: center;
+		}
+		.clean{
+			border-right: 1px solid;
+		}
+		.price{
+			font-size: 0.75rem;
+			color: @pink;
+		}
+	}
+	.hide{
+		display: none;
+	}
+	.nothing{
+		text-align: center;
+		p{
+			color: #b0b0b0;
+			font-size: 0.6rem;
+		}
+		.tit{
+			margin-top: 2.25rem;
+			line-height: 1rem;
+		}
+		img{
+			width: 50%;
+			margin-top: 0.6rem;
+		}
+		.btn{
+			display: block;
+			width: 5.55rem;
+			line-height: 1.5rem;
+			margin: 1.25rem auto;
+			border-radius: 0.2rem;
+			background: @pink;
+			font-size: 0.56rem;
+			color: #fff;
+		}
+	}
+	.get_coupon{
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    z-index: 999;
+	    width: 100%;
+	    .bac-mask{
+	    	position: absolute;
+		    top: 0;
+	    	width: 100%;
+		    background: #000;
+		    opacity: 0.8;
+	    }
+	    .msg{
+	    	position: absolute;
+		    top: 30%;
+		    left: 35%;
+		    z-index: 999;
+		    width: 30%;
+		    line-height: 2rem;
+		    height: 2rem;
+		    border-radius: 0.175rem;
+		    background: #000;
+		    color: #fff;
+		    text-align: center;
+		    font-size: 0.7rem;
+	    }
+	    .coupon_box{
+	    	position: fixed;
+		    bottom: 0;
+		    width: 100%;
+		    background: #fff;
+		    font-size: 0.7rem;
+		    text-align: center;
+		    .coupon_shop_tit{
+		    	padding: 0 0.75rem;
+		    	line-height: 2rem;
+		    	border-bottom: 1px solid #e1e1e1;
+    			font-size: 0.9rem;
+    			.close{
+    				float: right;
+			        width: 1rem;
+			        height: 1rem;
+			        margin-top: 0.5rem;
+			        background: url('/app/images/mxyc_app_yushou_shopping_icon_off@2x.png') no-repeat;
+			        background-size: 100%;
+    			}
+		    }
+		    .con{
+		    	padding: 0 0.75rem;
+		    	p{
+		    		overflow: hidden;
+		    		line-height: 2rem;
+		    		border-bottom: 1px solid #e1e1e1;
+		    		color: @font-gray;
+		    		.tit{
+		    			float: left;
+		    		}
+		    		.btn{
+		    			float: right;
+		    			width: 2.3rem;
+		    			line-height: 1rem;
+		    			margin: 0.5rem 0;
+		    			padding: 0.1rem 0.3rem;
+		    		}
+		    		.to_get{
+		    			border: 1px solid @pink;
+		    			border-radius: 0.1rem;
+		    			color: @pink;
+		    		}
+		    		.bare,.finish{
+		    			color: #888;
+		    		}
+		    	}
+		    }
+		    .ascertain{
+		    	line-height: 2rem;
+		    	background: @pink;
+		    	color: #fff;
+		    }
+		    .gray{
+		    	background: #e1e1e1;
+    			color: @font-gray;
+		    }
+	    }
+	    .hide{
+	    	display: none;
+	    }
+	}
+}

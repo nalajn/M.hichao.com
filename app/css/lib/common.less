@@ -1,0 +1,48 @@
+@import "../lib/reset";
+body{
+    max-width: 750px;
+    margin: auto;
+    background: #f7f7f7;
+}
+.footer{
+    max-width: 720px;
+}
+.choice-size-color{
+    max-width: 750px;
+}
+
+ul{
+    list-style: none;
+    padding: none;
+}
+.dialog{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%; 
+    max-width: 750px;
+    word-wrap: break-word;
+    color: #fff;
+    text-align: center;
+    font-size: 0.7rem;
+    .bac-mask{
+        height: 100%;
+        opacity: 0.8;
+        background: #000;
+    }
+    .msg{
+        position: absolute;
+        top: 30%;
+        left: 26%;
+        z-index: 9999;
+        width: 7.45rem;
+        min-height: 2.4rem;
+        padding: 0.5rem;
+        border-radius: 0.2rem;
+        margin: 0 auto;
+        background: #000;
+    }
+}
+.hide{
+    display: none;
+}

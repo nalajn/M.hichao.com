@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="telephone=no" name="format-detection">
+    <title>我的购物车</title>
+    <link rel="stylesheet" type="text/css" href="/app/dist/css/app/cart.css">
+  </head>
+  <body>  
+    <div id="cart">
+	    <p class="header"><a class="return"></a>我的购物车</p>
+      <div class="total">
+        <p class="select-all">
+          <img class="select" src="/app/images/icon_buy_chioce_ont@2x.png">
+          <span>全选</span>
+        </p>
+        <div class="con">
+          <p class="tit">
+            <span class="name">合计：</span>
+            <span class="price total-price">￥0</span>
+          </p>
+          <p class="tip">不含运费</p>
+        </div>
+        <p class="btn clean hide">清空购物车</p>
+        <p class="btn tobuy">立即购买</p>
+      </div>
+      <div class="nothing hide"> 
+        <p class="tit">购物车还没有商品</p>
+        <p>快去添加吧~</p> 
+        <img class="img" src="/app/images/nothing.png">
+        <a class="btn">去逛逛</a>
+      </div>
+      <div class="get_coupon hide">
+        <div class="bac-mask"></div>
+        <p class="msg hide"></p>
+        <div class="coupon_box">
+          <p class="coupon_shop_tit">
+            <span class="shop_name"></span>
+            <span>优惠券</span>
+            <span class="close"></span>
+          </p>
+          <div class="con"></div>
+          <p class="ascertain">一键领取</p>
+        </div>
+      </div>
+      <div class="dialog hide">
+        <div class="bac-mask"></div>
+        <p class="msg"></p>
+      </div>
+    </div>
+    <script type="text/javascript" src="/app/dist/js/app/cart.js"></script>
+  </body>
+</html>

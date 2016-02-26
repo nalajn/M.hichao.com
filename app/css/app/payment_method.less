@@ -1,0 +1,61 @@
+@charset 'utf-8';
+@import "../lib/common";
+
+@gray: #e1e1e1;
+@tit-gray: #343434;
+@font-gray: #6a6c72;
+@bac: #f7f7f7;
+@pink: #ff4c91;
+
+#payment_method {
+  background: #fff;
+  color: @font-gray;
+  .header {
+    position: relative;
+    padding: 0.75rem;
+    border-bottom: 1px solid #eee;
+    background: url('/app/images/back_button_black@2x.png') no-repeat 0.4rem center;
+    background-size: 6%;
+    text-align: center;
+    font-size: 1rem;
+    color: @tit-gray;
+    .return{
+      position: absolute;
+      left: 0.75rem;
+      width: 1rem;
+      height: 1rem;
+    }
+    .next {
+      position: absolute;
+      top: 1rem;
+      right: 0.75rem;
+      width: 3rem;
+      height: 1rem;
+      font-size: 0.75rem;
+    }
+  }
+  .method{
+  	overflow: hidden;
+  	padding: 0.75rem 0.75rem 0.75rem 3rem;
+    line-height: 1rem;
+    font-size: 0.75rem;
+    &:nth-child(2){
+      line-height: 2rem;
+    }
+  	dt{
+  		float: left;
+  		width:	80%;
+  	}
+  	dd{
+  		float: right;
+      line-height: 2rem;
+  		text-align: right;
+  		img{
+  			width: 1.1rem;
+  		}
+  	}
+  }
+  .hide{
+    display: none;
+  }
+}

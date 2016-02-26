@@ -1,0 +1,75 @@
+@charset "utf-8";
+@import "../lib/common";
+
+@gray: #e1e1e1;
+@tit-gray: #343434;
+@font-gray: #6a6c72;
+@bac: #f7f7f7;
+@pink: #ff4c91;
+body {
+  background: @bac;
+}
+
+#check_addresss {
+  .header {
+    position: fixed;
+    top: 0;
+    width: 91%;
+    padding: 0.75rem;
+    background: #fff url('/app/images/back_button_black@2x.png') no-repeat 0.75rem center;
+    background-size: 6%;
+    text-align: center;
+    font-size: 1rem;
+    color: @tit-gray;
+    .return {
+      position: absolute;
+      left: 0.75rem;
+      width: 1rem;
+      height: 1rem;
+    }
+    .save {
+      float: right;
+      font-size: 0.9rem;
+    }
+  }
+  .address_nav {
+    position: fixed;
+    top: 2.5rem;
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    padding-top: 0.5rem;
+    background: #f7f7f7;
+    span {
+      float: left;
+      width: 25%;
+      overflow: hidden;
+      background: #fff;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      text-align: center;
+      font-size: 0.7rem;
+      color: @font-gray;
+      &.on {
+        color: @pink;
+      }
+    }
+  }
+  .address_select {
+    margin-top: 5rem;
+    ul {
+      li {
+        width: 100%;
+        height: 2rem;
+        font-size: 0.7rem;
+        color: #3c3c3c;
+        line-height:2rem;
+        text-indent: 1.3rem;
+        &.active{
+          color: @pink;
+          background: @gray;
+        }
+      }
+    }
+  }
+}

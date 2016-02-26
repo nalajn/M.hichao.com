@@ -1,0 +1,114 @@
+@charset 'utf-8';
+@import "../lib/common";
+
+@gray: #e1e1e1;
+@font-gray: #3c3c3c;
+@tit-gray: #6a6c72;
+@pink: #ff4c91;
+
+#pay_result{
+	overflow: hidden;
+	width: 100%;
+	background: #fff;
+	.header{
+		width: 100%;
+		padding: 0.75rem 0;
+	    border-bottom: 1px solid @gray;
+	    // background: url('/app/images/back_button_black@2x.png') no-repeat 0.75rem center;
+	    // background-size: 6%;
+	    text-align: center;
+	    font-size: 1rem;
+	    color: @font-gray;
+	}
+	.hide{
+		display: none;
+	}
+	.img{
+		width: 30%;
+    	margin: 1.9rem 35% 0.7rem;
+	}
+	p{
+		text-align: center;
+	}
+	.tit{
+		font-size: 0.75rem;
+		color: #3c3c3c;
+	}
+	.con{
+		font-size: 0.7rem;
+	}
+	.success{
+		.tit{
+			margin-bottom: 1.05rem;
+		}
+		.con{
+			color: @tit-gray;
+		}
+	}
+	.fail{
+		.tit{
+			margin-bottom: 1.55rem;
+		}
+		img{
+			width: 38%;
+			margin: 1.9rem 31% 0.7rem;
+		}
+		.con{
+			width: 40%;
+		    height: 0.65rem;
+		    margin: 0 auto;
+			border-radius: 0.2rem;
+			padding: 0.55rem 0.57rem;
+			background: @pink;
+			color: #fff;
+		}
+	}
+	.wechat{
+		.arrows{
+		    position: absolute;
+		    top: 3rem;
+		    right: 1rem;
+		    width: 18%;
+		}
+		.img{
+			margin-bottom: 1.55rem;
+		}
+		p{
+			font-size: 0.7rem;
+			color: @tit-gray;
+		}
+	}
+	.footer{    
+		position: fixed;
+	    bottom: 0;
+	    overflow: hidden;
+	    width: 91%;
+	    padding: .65rem .75rem;
+	    background: #f7f7f7;
+		img,span{
+			float: left;
+		}
+		p{
+			display: inline-block;
+		    width: 50%;
+		    margin: 0.5rem 0;
+		    text-align: center;
+		    font-size: .6rem;
+		    color: #6a6c72;
+		    color: @tit-gray;
+		    span{
+		    	width: 100%;
+		    }
+		}
+		.logo{
+			width: 2.4rem;
+		}
+		.to-down{
+		    float: right;
+		    margin-top: 0.6rem;
+		    width: 22%;
+		    border-left: 1px solid #b0b0b0;
+		    padding-left: 1rem;
+		}
+	}
+}
